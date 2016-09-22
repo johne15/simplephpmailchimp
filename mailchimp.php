@@ -21,7 +21,7 @@
 
 	$ch = curl_init();
 
-	$curlopt_url = "https://usXX.api.mailchimp.com/3.0/lists/ea5321639f/members/"; // Set your Region in XX
+	$curlopt_url = "https://usXX.api.mailchimp.com/3.0/lists/$list_id/members/"; // Set your Region in XX
 	curl_setopt($ch, CURLOPT_URL, $curlopt_url);
 
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',
